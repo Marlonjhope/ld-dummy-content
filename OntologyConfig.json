@@ -124,6 +124,7 @@
 					"Format": "YesNo:Required",
 					"Display": false,
 					"DataAnnotation": true,
+					"UndiscoverableWhen": "no",
 					"PropertyPath": []
 				},
 				{
