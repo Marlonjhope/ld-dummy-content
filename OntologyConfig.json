@@ -113,9 +113,9 @@
 					"Label": "PositionalId",
 					"Validate": true,
 					"Format": "PositionalId:Required",
-                    "Display": false,
-                    "DataAnnotation": true,
-                    "PropertyPath": []
+					"Display": false,
+					"DataAnnotation": true,
+					"PropertyPath": []
 				},
 				{
 					"Uri": "isNationalPriority",
@@ -146,6 +146,13 @@
 				}
 			]
 			
+		}
+	],
+	"Undiscoverables":
+	[
+		{
+			"UndiscoverableLabel": "National priority",
+			"AnnotationValue": "no"
 		}
 	]
 }
