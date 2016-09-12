@@ -14,7 +14,8 @@
 			"Publish":
 			[
 				{
-					"Uri": "setting",
+					"Uri": "appliesToSetting",
+					"Label": "Setting",
 					"PropertyPath":
 					[
 						"^rdfs:subClassOf*"
@@ -29,8 +30,8 @@
 			"Publish":
 			[
 				{
-					"Uri": "age",
-					"Label": "Age Group",
+					"Uri": "appliesToAgeGroup",
+					"Label": "Age group",
 					"PropertyPath":
 					[
 						"^rdfs:subClassOf*",
@@ -47,8 +48,8 @@
 			"Publish":
 			[
 				{
-					"Uri": "condition",
-					"Label": "Condition Or Disease",
+					"Uri": "appliesToConditionOrDisease",
+					"Label": "Condition or disease",
 					"PropertyPath": 
 					[
 						"^rdfs:subClassOf*",
@@ -65,7 +66,8 @@
 			"Publish":
 			[
 				{
-					"Uri": "servicearea",
+					"Uri": "appliesToServiceArea",
+					"Label": "Service area",
 					"PropertyPath": 
 					[
 						"^rdfs:subClassOf*"
@@ -75,13 +77,14 @@
 			
 		},
 		{
-			"Schema": "qualitystandard/lifestylecondition.ttl",
-			"JsonLD": "qualitystandard/lifestylecondition.jsonld ",
+			"Schema": "qualitystandard/factorsaffectinghealthandwellbeing.ttl",
+			"JsonLD": "qualitystandard/factorsaffectinghealthandwellbeing.jsonld ",
 			"Map": true,
 			"Publish":
 			[
 				{
-					"Uri": "lifestylecondition",
+					"Uri": "appliesToFactorAffectingHealthAndWellbeing",
+					"Label": "Lifestyle condition",
 					"PropertyPath":
 					[
 						"^rdfs:subClassOf*"
@@ -113,9 +116,9 @@
 					"Label": "PositionalId",
 					"Validate": true,
 					"Format": "PositionalId:Required",
-					"Display": false,
-					"DataAnnotation": true,
-					"PropertyPath": []
+                    "Display": false,
+                    "DataAnnotation": true,
+                    "PropertyPath": []
 				},
 				{
 					"Uri": "isNationalPriority",
@@ -124,7 +127,6 @@
 					"Format": "YesNo:Required",
 					"Display": false,
 					"DataAnnotation": true,
-					"UndiscoverableWhen": "no",
 					"PropertyPath": []
 				},
 				{
@@ -147,13 +149,6 @@
 				}
 			]
 			
-		}
-	],
-	"Undiscoverables":
-	[
-		{
-			"UndiscoverableLabel": "National priority",
-			"AnnotationValue": "no"
 		}
 	]
 }
