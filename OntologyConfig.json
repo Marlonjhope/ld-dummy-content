@@ -119,6 +119,26 @@
 					"DataAnnotation": true
 				},
 				{
+					"Uri": "isWithdrawn",
+					"Label": "Withdrawn",
+					"Validate": true,
+					"Format": "YesNo",
+					"DataAnnotation": true,
+					"UndiscoverableWhen": "yes"
+				},
+				{
+					"Uri": "withdrawnOn",
+					"Label": "Withdrawn on",
+					"Validate": true,
+					"Format": "Date:Conditional:Withdrawn:yes",
+					"DataAnnotation": true,
+					"Display": {
+						"Condition": "Withdrawn:yes",
+						"Label": "<div class='withdrawn-label'>This statement has been withdrawn</div>",
+						"Template": "<div class='withdrawn-message'>Statement withdrawn {{value |  date: \"MMMM yyyy\" }}</div>"
+					}
+				},
+				{
 					"Uri": "isNationalPriority",
 					"Label": "National priority",
 					"Validate": true,
@@ -148,26 +168,6 @@
 						"Always": true
 					},
 					"DataAnnotation": true
-				},
-				{
-					"Uri": "isWithdrawn",
-					"Label": "Withdrawn",
-					"Validate": true,
-					"Format": "YesNo",
-					"DataAnnotation": true,
-					"UndiscoverableWhen": "yes"
-				},
-				{
-					"Uri": "withdrawnOn",
-					"Label": "Withdrawn on",
-					"Validate": true,
-					"Format": "Date:Conditional:Withdrawn:yes",
-					"DataAnnotation": true,
-					"Display": {
-						"Condition": "Withdrawn:yes",
-						"Label": "<div class='withdrawn-label'>This statement has been withdrawn</div>",
-						"Template": "<div class='withdrawn-message'>Statement withdrawn {{value |  date: \"MMMM yyyy\" }}</div>"
-					}
 				}
 			]
 			
