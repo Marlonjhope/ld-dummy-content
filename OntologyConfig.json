@@ -165,8 +165,8 @@
 					"DataAnnotation": true,
 					"Display": {
 						"Condition": "Withdrawn:yes",
-						"Label": "<div class='withdrawn-label'>Statement withdrawn</div>",
-						"Template": "<div class='withdrawn-message'>Statement withdrawn {{value |  date: \"MMMM yyyy\" }} because reasons"
+						"Label": "<div class='withdrawn-label'>This statement has been withdrawn</div>",
+						"Template": "<div class='withdrawn-message'>Statement withdrawn {{value |  date: \"MMMM yyyy\" }}</div>"
 					}
 				}
 			]
