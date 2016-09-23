@@ -119,23 +119,29 @@
 					"DataAnnotation": true
 				},
 				{
-					"Uri": "isWithdrawn",
-					"Label": "Withdrawn",
-					"Validate": true,
-					"Format": "YesNo",
-					"DataAnnotation": true,
-					"UndiscoverableWhen": "yes"
-				},
-				{
 					"Uri": "withdrawnOn",
 					"Label": "Withdrawn on",
 					"Validate": true,
-					"Format": "Date:Conditional:Withdrawn:yes",
+					"Format": "Date",
 					"DataAnnotation": true,
+					"UndiscoverableWhen": "*Populated*",
 					"Display": {
-						"Condition": "Withdrawn:yes",
+						"Always": true,
 						"Label": "<div class='withdrawn-label'>This statement has been withdrawn</div>",
 						"Template": "<div class='withdrawn-message'>Statement withdrawn {{value |  date: \"MMMM yyyy\" }}</div>"
+					}
+				},
+				{
+					"Uri": "isReplacedBy",
+					"Label": "Replaced by",
+					"Validate": true,
+					"Format": "Statement",
+					"DataAnnotation": true,
+					"UndiscoverableWhen": "*Populated*",
+					"Display": {
+						"Always": true,
+						"Label": "<div class='replaced-label'>This statement has been replaced by</div>",
+						"Template": "<div class='replaced-message'><a href='{{value}}'>this statement</a></div>"
 					}
 				},
 				{
