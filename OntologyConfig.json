@@ -84,7 +84,7 @@
 			[
 				{
 					"Uri": "appliesToFactorAffectingHealthAndWellbeing",
-					"Label": "Lifestyle condition",
+					"Label": "Factors affecting health and wellbeing",
 					"PropertyPath":
 					[
 						"^rdfs:subClassOf*"
