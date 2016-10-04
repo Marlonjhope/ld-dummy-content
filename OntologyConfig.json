@@ -77,14 +77,14 @@
 			
 		},
 		{
-			"Schema": "qualitystandard/factorsaffectinghealthandwellbeing.ttl",
-			"JsonLD": "qualitystandard/factorsaffectinghealthandwellbeing.jsonld ",
+			"Schema": "qualitystandard/factorsaffectinghealthorwellbeing.ttl",
+			"JsonLD": "qualitystandard/factorsaffectinghealthorwellbeing.jsonld ",
 			"Map": true,
 			"Publish":
 			[
 				{
-					"Uri": "appliesToFactorAffectingHealthAndWellbeing",
-					"Label": "Factors affecting health and wellbeing",
+					"Uri": "appliesToFactorAffectingHealthOrWellbeing",
+					"Label": "Factors affecting health or wellbeing",
 					"PropertyPath":
 					[
 						"^rdfs:subClassOf*"
