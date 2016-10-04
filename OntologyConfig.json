@@ -83,7 +83,7 @@
 			"Publish":
 			[
 				{
-					"Uri": "appliesToFactorAffectingHealthOrWellbeing",
+					"Uri": "appliesToFactorsAffectingHealthOrWellbeing",
 					"Label": "Factors affecting health or wellbeing",
 					"PropertyPath":
 					[
