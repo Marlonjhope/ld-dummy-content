@@ -2,7 +2,7 @@
 	"SchemaBase": "http://schema/ns/",
 	"UrlBase": "http://ld.nice.org.uk/",
 	"QSBase": "ns/qualitystandard",
-	"ThingBase": "resource",
+	"ThingBase": "things",
 	"IndexName": "kb",
 	"TypeName": "qualitystatement",
 	"SchemaDetails":
