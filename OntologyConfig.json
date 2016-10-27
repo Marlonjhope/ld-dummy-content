@@ -1,8 +1,7 @@
 {
 	"SchemaBase": "http://schema/ns/",
-	"UrlBase": "http://ld.nice.org.uk/",
-	"QSBase": "ns/qualitystandard",
-	"ThingBase": "things",
+	"QSBase": "https://nice.org.uk/ontologies/qualitystandard",
+	"ThingBase": "http://ld.nice.org.uk/things",
 	"IndexName": "kb",
 	"TypeName": "qualitystatement",
 	"SchemaDetails":
